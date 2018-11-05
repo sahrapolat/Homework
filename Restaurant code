@@ -1,0 +1,12 @@
+menu_file = open("menu.txt", "w+")
+menu_file.write("The daily menu: \n")
+
+menu_dict ={}
+
+while True:
+    dish = raw_input("Please enter the dish for today! ")
+    price = raw_input("Please enter the price for the dish! ")
+
+menu_dict[dish] = price
+
+menu_file.close()
